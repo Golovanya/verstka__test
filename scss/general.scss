@@ -1,0 +1,62 @@
+@font-face {
+    font-family: korataki;
+    src: url("../fonts/korataki.otf");
+}
+
+@font-face {
+    font-family: latobold;
+    src: url("../fonts/Lato-Bold.ttf");
+    
+}
+
+@font-face {
+    font-family: latoregular ;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: latosemibold;
+    src: url("../fonts/Lato-Semibold.ttf");
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+   
+}
+
+h1{
+    font-size: 40px;
+    font-family: korataki;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0px 20px;
+    margin: auto;
+    font-family: latobold;
+}
+
+ul{
+    list-style: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.btn{
+    color: white;
+    padding: 8px 40px;
+    border-radius: 100px;
+    border: none;
+}
+

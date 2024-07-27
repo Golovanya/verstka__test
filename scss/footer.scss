@@ -1,0 +1,146 @@
+footer {
+    width: 100%;
+    background-color: rgba(12, 12, 12, 1);
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    grid-auto-rows: auto;
+    column-gap: 100px;
+    justify-content: space-between;
+   
+    
+}
+
+.logos {
+    width: 214px;
+    height: 31px;
+}
+.footer-logo{
+    width: 239px;
+    height: 62px;
+}
+.service {
+    grid-column-start: 3;
+    grid-row: 1/3;
+}
+
+.captcha {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    color: rgba(128, 128, 128, 1);
+    padding-top: 10px;
+}
+
+.contacts{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.logos{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    margin-top: 35px; 
+    
+}
+
+.public {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    color: rgba(128, 128, 128, 1);
+    margin-bottom: 38px;
+}
+
+
+footer p {
+    font-family: latoregular;
+    color: rgba(245, 245, 245, 1);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-family: latobold;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.public p {
+    color: rgb(128, 128, 128);
+}
+
+.contacts :nth-child(2) {
+    margin-bottom: 25px;
+}
+.adress p {
+    margin-bottom: 0;
+   
+}
+
+@media (width < 771px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 30px;
+       
+    }
+    .footer-logo {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        margin-bottom: 33px;
+        width: 180px;
+        height: 46px;
+    }
+    .adress {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .contacts {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .service {
+        grid-column-start: 3;
+        grid-row: 2/4
+    }
+    .logos {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        
+    }
+    .captcha {
+        grid-column:2/4;
+        grid-row-start: 4;
+        padding-left: 60px;
+    }
+    .public {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+}
+
+@media (width < 391px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .captcha{
+        order: 7;
+        padding: 0;
+    }
+    .footer-logo{
+        margin-bottom: 36px;
+    }
+    .adress, .contacts, .service, .logos {
+        margin-bottom: 30px;
+    }
+    .public {
+        margin-bottom: 52px;
+    }
+    
+}
